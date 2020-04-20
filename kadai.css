@@ -1,0 +1,61 @@
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   color: #6c6b6b;
+}
+/*clearfix入り込み防止*/
+.clearfix::after {
+	content:"";
+	display: block;
+	clear: both;
+}
+
+main {
+	width: 960px;
+	padding: 50px 0;
+	margin: 0 auto;
+}
+.box {
+	width: 300px;
+	padding: 9.9px;
+	position: relative;
+	float: left;
+	border: 0.1px solid gray;
+}
+.box:nth-child(-n+2) {
+	margin-right: 30px;
+}
+
+.text {
+	background-color: orange;
+	color: white;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+.image {
+	width: 280px;
+}
+
+@media screen and (max-width:768px) {
+	main{
+		width: 100%;
+		padding: 50px 0;
+		margin: 0 5%;
+	}
+	.box {
+		width: 90%;
+		float: none;
+		padding: 3%;
+	}
+	.box:nth-child(-n+2) {
+	margin-bottom: 20px;
+    }
+    .text {
+    }
+    .image { 
+    	width: 100%;
+    	height: 50%;
+    }
+}
