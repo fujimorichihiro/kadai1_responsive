@@ -17,11 +17,13 @@ main {
 	margin: 0 auto;
 }
 .box {
-	width: 300px;
 	padding: 9.9px;
 	position: relative;
 	float: left;
 	border: 0.1px solid gray;
+}
+.contents {
+	width: 280px;
 }
 .box:nth-child(-n+2) {
 	margin-right: 30px;
@@ -33,10 +35,30 @@ main {
 	position: absolute;
 	top: 0;
 	left: 0;
+	padding: 5px;
 }
-.image {
-	width: 280px;
+.image1 {
+	background-image: url("img/flow01.png");
+	height: 150px;
+	background-size: cover;
+	background-position: bottom;
 }
+.image2 {
+	background-image: url("img/flow02.png");
+	height: 150px;
+	background-size: cover;
+	background-position: bottom;
+}
+.image3 {
+	background-image: url("img/flow03.png");
+	height: 150px;
+	background-size: cover;
+	background-position: bottom;
+}
+.title {
+	margin: 10px 0 5px 0;
+}
+
 
 @media screen and (max-width:768px) {
 	main{
@@ -45,17 +67,19 @@ main {
 		margin: 0 5%;
 	}
 	.box {
-		width: 90%;
+		width: 60%;
 		float: none;
-		padding: 3%;
+		padding: 2.5%;
+		margin: 0 auto;
+	}
+	.contents {
+		width: 100%;
 	}
 	.box:nth-child(-n+2) {
+	margin-right: auto;
 	margin-bottom: 20px;
     }
     .text {
     }
-    .image { 
-    	width: 100%;
-    	height: 50%;
-    }
+
 }
