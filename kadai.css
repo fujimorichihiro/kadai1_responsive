@@ -13,17 +13,17 @@
 
 main {
 	width: 960px;
-	padding: 50px 0;
-	margin: 0 auto;
+	margin: 50px auto;
 }
 .box {
-	padding: 9.9px;
+	width: 300px;
+	padding: 10px;
 	position: relative;
 	float: left;
 	border: 0.1px solid gray;
 }
 .contents {
-	width: 280px;
+	width: ;
 }
 .box:nth-child(-n+2) {
 	margin-right: 30px;
@@ -64,12 +64,12 @@ main {
 	main{
 		width: 100%;
 		padding: 50px 0;
-		margin: 0 5%;
+		margin: 0;
 	}
 	.box {
-		width: 60%;
+		width: 90%;
 		float: none;
-		padding: 2.5%;
+		padding: 3%;
 		margin: 0 auto;
 	}
 	.contents {
